@@ -1,0 +1,69 @@
+GET http://localhost:3001/alunos
+
+###
+POST  http://localhost:3001/tokens/
+Content-Type: application/json
+
+{
+  "email": "denenewton@gmail.com",
+  "password": "tigre225"
+}
+
+
+###
+POST  http://localhost:3001/alunos/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJkZW5lbmV3dG9uQGljbG91ZC5jb20iLCJpYXQiOjE2NDM3NjgzODQsImV4cCI6MTY0NDM3MzE4NH0.Z438c72gofOZ_UOp1Q3mEeNP76KUsnW8FgZK7lmwz5I
+Content-Type: application/json
+
+{
+  "nome": "Daniel",
+  "sobrenome": "dos Santos Araujo ",
+  "email": "denenewton@icloud.com",
+  "idade": 40,
+  "peso": 65,
+  "altura": 1.65
+}
+###
+
+POST  http://localhost:3001/users/
+Content-Type: application/json
+
+{
+  "nome": "Daniel dos Santos araújo",
+  "email": "denenewton@icloud.com",
+  "password": "tigre225"  
+}
+
+
+###
+POST  http://localhost:3001/fotos
+
+
+
+###
+
+PUT   http://localhost:3001/users/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJkZW5lbmV3dG9uQGljbG91ZC5jb20iLCJpYXQiOjE2NDM3NjgzODQsImV4cCI6MTY0NDM3MzE4NH0.Z438c72gofOZ_UOp1Q3mEeNP76KUsnW8FgZK7lmwz5I
+
+Content-Type: application/json
+
+{
+  "nome": "Daniel dos Santos Araújo",
+  "email": "denenewton@icloud.com",
+  "password": "tigre225"
+}
+
+###
+GET http://localhost:3001/alunos
+
+
+
+###
+GET http://localhost:3001/alunos/2
+
+
+
+
+###
+DELETE  http://localhost:3001/alunos/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJkZW5lbmV3dG9uQGljbG91ZC5jb20iLCJpYXQiOjE2NDM3NjQ1NjUsImV4cCI6MTY0NDM2OTM2NX0.exrT97VNZc6K8XB82OGTUiIir-tV6qiu7A06NM2YhfQ

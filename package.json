@@ -1,11 +1,9 @@
 {
-  "name": "api-clase",
+  "name": "escola-denenewton",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/serve.js",
-    "build": "sucrase ./src -d ./dist --transforms imports",
     "start": "node dist/serve.js"
   },
   "keywords": [],

@@ -15,11 +15,7 @@ class App{
     }
 
     middlewares(){
-<<<<<<< HEAD
         this.app.use('/images/', _express2.default.static(_path.resolve.call(void 0, __dirname,'..', 'uploads', 'images')));
-=======
-        this.app.use('/images/', _express2.default.static(_path.resolve.call(void 0, __dirname, 'uploads', 'images')));
->>>>>>> 183fe43c2fd8b7359c612e84dcd593fd5286814e
         this.app.use(_express2.default.urlencoded({extended:false}))
         this.app.use(_express2.default.json())
         this.app.use(_cors2.default.call(void 0, ))
